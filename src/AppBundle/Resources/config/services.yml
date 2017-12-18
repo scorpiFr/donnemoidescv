@@ -1,0 +1,9 @@
+services:
+#    oc_platform.antispam:
+#        class: OC\PlatformBundle\Antispam\OCAntispam
+    apec_manager:
+        class: AppBundle\Service\ApecManager
+        arguments:
+            $username : '%apec_username%'
+            $password : '%apec_password%'
+            $cookieFilePath: '%apec_cookie_file_path%'
